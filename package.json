@@ -10,6 +10,14 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@vitejs/plugin-vue": "^4.5.2",
+    "sass": "^1.69.5",
+    "typescript": "^5.3.3",
     "vite": "^5.0.8"
+  },
+  "dependencies": {
+    "@m-ui/components": "workspace:^",
+    "@m-ui/utils": "workspace:^",
+    "vue": "^3.3.12"
   }
 }

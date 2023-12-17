@@ -1,0 +1,16 @@
+{
+  "name": "@m-ui/play",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "dev": "vite dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "m-ui": "workspace:^"
+  }
+}

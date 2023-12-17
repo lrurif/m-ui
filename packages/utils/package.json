@@ -1,0 +1,20 @@
+{
+  "name": "@m-ui/utils",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/mui-utils.umd.js",
+  "module": "./dist/mui-utils.mjs",
+
+  "exports": {
+    ".": {
+      "require": "./dist/mui-utils.umd.js",
+      "module": "./dist/mui-utils.mjs"
+    }
+  },
+  "scripts": {
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
