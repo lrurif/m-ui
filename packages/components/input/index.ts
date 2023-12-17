@@ -1,3 +1,3 @@
-import input from "./src/input.vue"
+import input from './src/input.vue';
 
 export const MInput = input;
