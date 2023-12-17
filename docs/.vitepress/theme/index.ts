@@ -3,7 +3,16 @@ import { h } from 'vue'
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import './style.css'
-
+import { MButton, MInput } from 'm-ui';
+const components = [
+  MButton,
+  MInput,
+];
+const installCom = (app) => {
+  components.forEach(com => {
+    app.component(com.name, com)
+  })
+}
 export default {
   extends: DefaultTheme,
   Layout: () => {
@@ -12,6 +21,6 @@ export default {
     })
   },
   enhanceApp({ app, router, siteData }) {
-    // ...
+    installCom(app);
   }
 }

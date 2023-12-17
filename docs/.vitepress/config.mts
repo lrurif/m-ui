@@ -1,28 +1,38 @@
-import { defineConfig } from 'vitepress'
+import type { UserConfig } from 'vitepress'
 
-// https://vitepress.dev/reference/site-config
-export default defineConfig({
-  title: "m-ui",
-  description: "A Vue UI",
+export const config: UserConfig = {
+  title: 'M-UI',
+  description: 'a Vue 3 based component library for designers and developers',
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
+    logo: '/images/vite.svg',
+    // footer: {
+    //   message: 'Released under the MIT License.',
+    //   copyright: 'Copyright © 2022-PRESENT vangleer and Vangle contributors'
+    // },
+    // algolia: {
+    //   apiKey: 'your_api_key',
+    //   indexName: 'index_name'
+    // },
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: '指南', link: '/guide/design' },
+      { text: '组件', link: '/component/button' }
     ],
-
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
-    ],
-
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
+    socialLinks: [{ icon: 'github', link: 'https://github.com/vangleer' }],
+    sidebar: {
+      '/guide/': [],
+      '/component/': [
+        {
+          text: 'Basic 基础组件',
+          items: [
+            {
+              text: 'Button',
+              link: '/component/button'
+            }
+          ]
+        }
+      ]
+    }
   }
-})
+}
+
+export default config

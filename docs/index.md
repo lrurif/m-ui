@@ -1,25 +1,23 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
 hero:
-  name: "m-ui"
-  text: "A Vue UI"
-  tagline: My great project tagline
+  name: M-UI
+  text:
+  tagline: 基于 Vue 3，面向设计师和开发者的组件库
   actions:
-    - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: 快速开始
+      link: /component/button
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - icon: ⚡️
+    title: 这是一个闪电图标
+    details: wawawa
+  - icon: 🖖
+    title: 这是一个手掌图标
+    details: good...
+  - icon: 🛠️
+    title: 这是一个修理图标
+    details: cocococo
 ---
-

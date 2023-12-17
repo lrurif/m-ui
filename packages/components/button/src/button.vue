@@ -18,7 +18,7 @@ const props = withDefaults(
     :disabled="props.disabled"
     class="m-button"
   >
-    333
+    <slot />
   </button>
 </template>
 

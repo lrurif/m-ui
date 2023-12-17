@@ -74,6 +74,10 @@ importers:
         version: registry.npmmirror.com/vue-tsc@1.8.25(typescript@5.3.3)
 
   docs:
+    dependencies:
+      m-ui:
+        specifier: workspace:^
+        version: link:../packages/m-ui
     devDependencies:
       vitepress:
         specifier: 1.0.0-rc.31
