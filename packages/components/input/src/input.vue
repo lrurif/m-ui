@@ -4,8 +4,11 @@ let value = ref("")
 </script>
 
 <template>
-  <input v-model="value"/>
+  <input v-model="value" class="m-input"/>
 </template>
 
 <style scoped lang="scss">
+.m-input {
+  color: red;
+}
 </style>

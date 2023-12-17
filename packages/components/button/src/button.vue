@@ -4,7 +4,7 @@ import { hello } from "@m-ui/utils";
 hello("你好");
 const props = withDefaults(
   defineProps<{
-    disabled?: Boolean;
+    disabled?: boolean;
   }>(),
   {
     disabled: false,
@@ -13,7 +13,11 @@ const props = withDefaults(
 </script>
 
 <template>
-  <button :disabled="props.disabled">contents</button>
+  <button :disabled="props.disabled" class="m-button">333</button>
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.m-button {
+  color: yellow;
+}
+</style>
