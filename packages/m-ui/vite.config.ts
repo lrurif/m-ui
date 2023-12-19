@@ -11,7 +11,6 @@ export default defineConfig({
     minify: false,
     rollupOptions: {
       external: [
-        //   /@m-ui.*/,
         'vue',
       ],
       output: {

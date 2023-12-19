@@ -4,10 +4,12 @@
   "main": "index.js",
   "scripts": {
     "prepare": "husky install",
+    "dev": "pnpm run -C play dev",
+    "build": "pnpm run -C packages/m-ui build",
     "doc:dev": "pnpm run -C docs dev",
     "type:src": "vue-tsc -p tsconfig.src.json --composite false --declaration --emitDeclarationOnly",
     "type:node": "vue-tsc -p tsconfig.node.json --noEmit --composite false",
-    "build": "pnpm run -C packages/m-ui build",
+
     "lint:script": "eslint --ext .js,.jsx,.ts,.tsx,.vue --fix ./"
   },
   "keywords": [],
